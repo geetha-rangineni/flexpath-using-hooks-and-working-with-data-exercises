@@ -1,0 +1,22 @@
+
+Exercise 17: Centralizing Data Fetching with Custom Hooks
+
+
+Description: 
+
+Explain the benefits of using custom hooks like useFetch for data fetching.
+
+Answer:
+
+1. Code Reusability
+Instead of duplicating fetch logic in every component, you define it once in useFetch and reuse it wherever needed.
+2. Cleaner Component Code
+It separates concerns — the component focuses on rendering, and the hook handles data fetching. This makes components shorter, more readable, and easier to maintain.
+3. Encapsulation of Side Effects
+All side-effect logic (like fetch, aborting on unmount, etc.) lives inside the hook, which keeps your components stateless and predictable.
+4. Testability
+Custom hooks can be tested independently from UI components, making unit testing easier and more modular.
+5. Consistency
+Every component using useFetch handles loading, errors, and data the same way — no logic drift or inconsistent state
+6. Scalability
+When your app grows, you can extend the hook (e.g., add caching, retries, pagination) without refactoring every place that fetches data.

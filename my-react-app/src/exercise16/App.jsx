@@ -10,10 +10,6 @@ import EnhancedDataFetcher from './components/EnhancedDataFetcher';
 import CallbackDemo from './components/CallbackDemo';
 import MemoizationDemo from './components/MemoizationDemo';
 import CustomHookDemo from './components/CustomHookDemo';
-import ReducerCounter from './components/ReducerCounter';
-import DebouncedInput from './components/DebouncedInput';
-import ThrottledScrollLogger from './components/ThrottledScrollLogger';
-import FragmentDemo from './components/FragmentDemo';
 
 function App() {
   return (
@@ -28,10 +24,6 @@ function App() {
         <Link to="/callback" style={{ marginRight: '1rem' }}>Callback Demo</Link>
         <Link to="/memo">Memo Demo</Link> 
         <Link to="/custom-hook" style={{ marginRight: '1rem' }}>Custom Hook</Link>
-        <Link to="/counter" style={{ marginRight: '1rem' }}>Counter</Link>
-        <Link to="/debounced" style={{ marginRight: '1rem' }}>Debounced Input</Link>
-        <Link to="/scroll-logger" style={{ marginRight: '1rem' }}>Scroll Logger</Link>
-        <Link to="/fragment" style={{ marginRight: '1rem' }}>Fragment Demo</Link>
       </nav>
 
       <Routes>
@@ -44,10 +36,6 @@ function App() {
         <Route path="/callback" element={<CallbackDemo />} />
         <Route path="/memo" element={<MemoizationDemo />} />
         <Route path="/custom-hook" element={<CustomHookDemo />} />
-        <Route path="/counter" element={<ReducerCounter />} />
-        <Route path="/debounced" element={<DebouncedInput />} />
-        <Route path="/scroll-logger" element={<ThrottledScrollLogger />} />
-        <Route path="/fragment" element={<FragmentDemo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
@@ -55,16 +43,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-<Route path="/fragment" element={<FragmentDemo />} />
-
-
-
